@@ -1,0 +1,279 @@
+ /* Reset some default styles */
+ body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+  }
+
+  /* Global styles */
+  body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background-color: #333; /* Dark theme background color */
+    color: #fff; /* Text color */
+    display: flex;
+    flex-direction: column; /* Adjusted layout */
+    justify-content: space-between; /* Content space distribution */
+    min-height: 100vh;
+  }
+
+  .container {
+    background-color: #444; /* Darker background for container */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    max-width: 800px;
+    margin: 20px auto;
+    animation: fadeIn 1s ease-in-out; /* Fade-in animation */
+  }
+
+  /* Header styles */
+  h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+
+  /* Form styles */
+  form {
+    margin-top: 20px;
+  }
+
+  label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 10px;
+    font-size: 18px;
+  }
+
+  input[type="text"],
+  input[type="url"] {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border: 1px solid #555; /* Darker border color */
+    border-radius: 5px;
+    font-size: 16px;
+    color: #333; /* Input text color */
+    background-color: #fff; /* Input background color */
+    transition: border-color 0.3s, background-color 0.3s;
+  }
+
+  input[type="text"]:focus,
+  input[type="url"]:focus {
+    border-color: #0066cc;
+    background-color: #f5f5f5; /* Lighter background on focus */
+  }
+
+  .submit-button {
+    background-color: #0066cc;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 12px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+
+  .submit-button:hover {
+    background-color: #004499;
+  }
+
+  /* Shortened URL display styles */
+  .shortened-url {
+    font-weight: bold;
+    color: #0066cc;
+    margin-top: 20px;
+    word-wrap: break-word;
+    font-size: 18px;
+  }
+
+  /* Error message styles */
+  .error-message {
+    color: #ff0000;
+    margin-top: 10px;
+    font-size: 16px;
+  }
+
+  /* Additional styles (customize as needed) */
+
+  /* Additional CSS styles for new features */
+  .usage-count {
+    margin-top: 10px;
+    color: #333;
+    font-size: 16px;
+  }
+
+  .last-url {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #666;
+  }
+
+  /* New feature: Daily link limit */
+  .daily-limit {
+    margin-top: 10px;
+    color: #ff6600;
+    font-size: 16px;
+  }
+
+  /* Additional styles for icons and text */
+  .aligncenter {
+    text-align: center;
+  }
+
+  .icon {
+    background-color: #0066cc;
+    color: #fff;
+    border-radius: 60%;
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    animation: spin 2s linear infinite; /* Icon rotation animation */
+  }
+
+  /* New feature: Additional sections with custom styling */
+  .features {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 columns */
+    gap: 20px; /* Gap between feature sections */
+  }
+
+  .feature {
+    padding: 20px;
+    background-color: hsl(0, 0%, 27%); /* Darker background for sections */
+    border-radius: 10px;
+    animation: fadeIn 1s ease-in-out; /* Fade-in animation */
+  }
+
+  .feature h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #fff; /* Section header text color */
+  }
+
+  .feature p {
+    font-size: 16px;
+    color: #ccc; /* Section text color */
+  }
+
+  /* CSS animations */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  
+
+  /* UI enhancements */
+  a {
+    text-decoration: none;
+    color: #0066cc;
+    transition: color 0.3s;
+  }
+
+  a:hover {
+    color: #004499;
+  }
+
+  /* Button styles */
+  .button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #0066cc;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+
+  .button:hover {
+    background-color: #004499;
+  }
+
+  /* Custom button styles */
+  .custom-button {
+    background-color: #ffcc00;
+    color: #333;
+    border: none;
+    border-radius: 5px;
+    padding: 12px 24px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+
+  .custom-button:hover {
+    background-color: #ff9900;
+  }
+
+  /* Add additional CSS for styling as needed */
+  /* Additional dark theme styles */
+  hr {
+    border-color: #555; /* Darker horizontal rule */
+  }
+
+  /* Loading animation */
+  .loader {
+    border: 4px solid #f3f3f3;
+    border-top: 4px solid #0066cc;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    animation: spin 2s linear infinite;
+    margin: 0 auto;
+    margin-top: 20px;
+    display: none; /* Initially hidden */
+  }
+
+  /* Loading text */
+  .loading-text {
+    font-size: 16px;
+    color: #ccc;
+    margin-top: 10px;
+    display: none; /* Initially hidden */
+  }
+  /* Add CSS for password input fields */
+input[type="password"] {
+width: 100%;
+padding: 10px;
+margin: 8px 0;
+border: 1px solid #555; /* Darker border color */
+border-radius: 5px;
+font-size: 16px;
+color: #333; /* Input text color */
+background-color: #fff; /* Input background color */
+transition: border-color 0.3s, background-color 0.3s;
+}
+
+input[type="password"]:focus {
+border-color: #0066cc;
+background-color: #f5f5f5; /* Lighter background on focus */
+}
+/* Add styles for the "Copy Link" button */
+.copy-button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.copy-button:hover {
+    background-color: #0056b3;
+}
+

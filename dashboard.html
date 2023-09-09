@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dashboard</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+        }
+
+        #fullscreen-iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <!-- Replace 'https://www.example.com' with the URL you want to embed -->
+    <iframe id="fullscreen-iframe" src="https://shortenurl-a0ji.onrender.com/dashboard"></iframe>
+
+    <script>
+        // JavaScript to make the iframe fullscreen
+        const iframe = document.getElementById('fullscreen-iframe');
+
+        // Function to make the iframe fullscreen
+        function makeFullscreen() {
+            if (iframe.requestFullscreen) {
+                iframe.requestFullscreen();
+            } else if (iframe.mozRequestFullScreen) {
+                iframe.mozRequestFullScreen();
+            } else if (iframe.webkitRequestFullscreen) {
+                iframe.webkitRequestFullscreen();
+            } else if (iframe.msRequestFullscreen) {
+                iframe.msRequestFullscreen();
+            }
+        }
+
+        // Call the function to make the iframe fullscreen
+        makeFullscreen();
+    </script>
+</body>
+</html>

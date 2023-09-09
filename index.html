@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>URL Shortener</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>URL Shortener</h1>
+  <div class="container">
+
+    <h1>URL Shortener</h1>
+    <p class="usage-count" id="usage-count"></p>
+    <p class="daily-limit" id="daily-limit">5 URLS PER DAY</p>
+    <form action="https://shortenurl-a0ji.onrender.com/api/shorten" method="post" id="shorten-form">
+      <label for="originalUrl">Enter your URL:</label>
+      <input type="url" id="originalUrl" name="originalUrl" required>
+  
+      <!-- Conditional custom short URL input field -->
+      <label for="customShortUrl">Custom Short URL (optional):</label>
+      <input type="text" id="customShortUrl" name="customShortUrl" maxlength="10">
+      
+      <input type="submit" class="submit-button" value="Shorten">
+      <div class="loader"></div>
+      <p class="loading-text">Shortening...</p>
+  </form>
+  
+    <p class="shortened-url" id="shortened-url"></p>
+    <button class="copy-button" onclick="copyToClipboard()">Copy Link</button>
+    <p class="error-message" id="error-message"></p>
+   
+    <!-- New feature: Display usage count and last URL -->
+    <p class="usage-count" id="usage-count"></p>
+    <p class="last-url" id="last-url"></p>
+    <!-- New feature: Daily link limit -->
+ 
+    <div class="qrcode-container">
+      <h2>QR Code</h2>
+      <img id="qrCodeImage" src="" alt="QR Code">
+<p>Go to <A href="/dashboard.html">Dashboard</A> and <a href="/urllist.html">url-list </a> and go on.</p>
+    </div>
+  </div>
+
+  </div>
+
+  <div class="features">
+    <div class="feature">
+      <div class="icon">
+        <h3 class="aligncenter">Easy</h3>
+      </div>
+      <h2>Easy to Use</h2>
+      <p>URL Shortener is user-friendly and efficient. Simply enter your long link to get a shortened URL.</p>
+    </div>
+  
+    <div class="feature">
+      <div class="icon">
+        <h3 class="aligncenter"> Fast</h3>
+      </div>
+      <h2>Superior Speed</h2>
+      <p>Experience lightning-fast link shortening with URL Shortener, regardless of the link's length.</p>
+    </div>
+    
+    <div class="feature">
+      <div class="icon">
+        <h3 class="aligncenter">Secure</h3>
+      </div>
+      <h2>Security First</h2>
+      <p>Our service places a high priority on both speed and security. We employ the HTTPS protocol and data encryption to ensure your safety.</p>
+    </div>
+    
+    <div class="feature">
+      <div class="icon">
+        <h3 class="aligncenter">Analytics</h3>
+      </div>
+      <h2>Comprehensive Analytics</h2>
+      <p>Track and analyze the number of clicks your shortened URLs receive with our dashboard and url-list.</p>
+    </div>
+    
+    <div class="feature">
+      <div class="icon">
+        <h3 class="aligncenter">No login</h3>
+      </div>
+      <h2>No login required</h2>
+      <p>URL Shortener and it's all toools is accessible without any login and personal info.</p>
+    </div>
+    
+    <div class="feature">
+      <div class="icon">
+        <h3 class="aligncenter">Multi-Device</h3>
+      </div>
+      <h2>Universal Compatibility</h2>
+      <p>Enjoy seamless access from smartphones, tablets, and desktops, making it convenient for all your needs.</p>
+    </div>
+    
+
+  
+
+    <script src="script.js">
+     
+    </script>
+    
+</body>
+</html>
